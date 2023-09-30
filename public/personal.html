@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="flex w-full h-full bg-brand-gray-9">
+      <!-- Site Bar -->
+      <div
+        class="z-50 hidden md:block fixed top-0 left-0 w-280 h-full bg-white border-r border-brand-gray-9 px-5 py-2.5"
+      >
+        <!-- Site Bar Logo -->
+        <a href="#">
+          <img
+            src="./assets/images/header/logo.svg"
+            alt="logo"
+            class="w-16 h-14"
+          />
+        </a>
+
+        <!-- Site Bar Items -->
+        <div class="mt-9">
+          <p class="font-medium text-brand-gray-3">Недвижимость</p>
+
+          <a
+            href="#"
+            class="flex items-center gap-2.5 pl-5 pr-3 py-3 bg-brand-gray-8 rounded-10 mt-5"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 11V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H13"
+                stroke="#10C4D2"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21 11V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H13"
+                stroke="#196CCD"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21 11V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H13"
+                stroke="#1059E7"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M19 7V3"
+                stroke="#10C4D2"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M19 7V3"
+                stroke="#196CCD"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M19 7V3"
+                stroke="#1059E7"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M17 5H21"
+                stroke="#10C4D2"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M17 5H21"
+                stroke="#196CCD"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M17 5H21"
+                stroke="#1059E7"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8 14.5V11.5C8.00001 11.0443 8.20716 10.6133 8.563 10.3287L11.063 8.3287C11.6108 7.89043 12.3893 7.89043 12.9371 8.3287L15.4371 10.3287C15.7929 10.6134 16 11.0443 16 11.5V14.5C16 15.3284 15.3284 16 14.5 16H9.5C8.67157 16 8 15.3284 8 14.5Z"
+                stroke="#10C4D2"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8 14.5V11.5C8.00001 11.0443 8.20716 10.6133 8.563 10.3287L11.063 8.3287C11.6108 7.89043 12.3893 7.89043 12.9371 8.3287L15.4371 10.3287C15.7929 10.6134 16 11.0443 16 11.5V14.5C16 15.3284 15.3284 16 14.5 16H9.5C8.67157 16 8 15.3284 8 14.5Z"
+                stroke="#196CCD"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8 14.5V11.5C8.00001 11.0443 8.20716 10.6133 8.563 10.3287L11.063 8.3287C11.6108 7.89043 12.3893 7.89043 12.9371 8.3287L15.4371 10.3287C15.7929 10.6134 16 11.0443 16 11.5V14.5C16 15.3284 15.3284 16 14.5 16H9.5C8.67157 16 8 15.3284 8 14.5Z"
+                stroke="#1059E7"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <p class="font-medium text-sm text-brand-primary-normal">
+              Добавить недвижимость
+            </p>
+          </a>
+
+          <a
+            href="#"
+            class="flex items-center gap-2.5 px-5 py-3 group hover:bg-brand-gray-8 rounded-10 mt-2.5"
+          >
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.99622 12.6947L11.9346 5.89022C12.5476 5.36472 13.4523 5.36472 14.0654 5.89022L22.0037 12.6947"
+                stroke="#747887"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21.0034 22.0032V5.4963C21.0034 5.22004 20.7794 4.99609 20.5032 4.99609H17.5019C17.2257 4.99609 17.0017 5.22004 17.0017 5.4963V8.10339"
+                stroke="#747887"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10.5444 22.0066V16.5043C10.5444 15.9518 10.9923 15.5039 11.5449 15.5039H14.4552C15.0077 15.5039 15.4556 15.9518 15.4556 16.5043V22.0066"
+                stroke="#747887"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M5.28231 11.5938V22.0044"
+                stroke="#747887"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M22.0037 22.0041H3.99622"
+                stroke="#747887"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <p
+              class="font-medium text-sm text-brand-black group-hover:text-brand-primary-normal"
+            >
+              Моя недвижимость
+            </p>
+          </a>
+
+          <hr class="block mt-5 mb-5" />
+
+          <p class="font-medium text-brand-gray-3">Управление компанией</p>
+
+          <a
+            href="#"
+            class="flex items-center gap-2.5 px-5 py-3 group hover:bg-brand-gray-8 rounded-10 mt-2.5"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              class="stroke-brand-gray-3 group-hover:stroke-brand-primary-normal"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.0326 6.59615L15.1573 3.56462C15.6663 3.07081 16.3987 2.88345 17.0822 3.07216C17.7658 3.26088 18.2983 3.79746 18.4818 4.48245L20.9297 13.618C21.1133 14.3029 20.9204 15.0339 20.4227 15.5391C19.9251 16.0443 19.1971 16.2483 18.5094 16.0751L14.2876 15.012"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.59497 8.3207L12.0326 6.59573L14.2877 15.0115L7.84999 16.7365C5.98286 17.2368 4.06368 16.1288 3.56338 14.2616L3.12011 12.6073C2.87985 11.7107 3.00561 10.7554 3.46974 9.95145C3.93387 9.14755 4.69834 8.56095 5.59497 8.3207Z"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12.407 15.5156L13.1775 18.3913C13.3148 18.9037 13.2429 19.4496 12.9777 19.9089C12.7124 20.3683 12.2756 20.7035 11.7632 20.8408L11.431 20.9298C10.9186 21.0671 10.3727 20.9952 9.91332 20.73C9.45394 20.4648 9.11874 20.028 8.98145 19.5156L8.21094 16.64"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <p
+              class="font-medium text-sm text-brand-black group-hover:text-brand-primary-normal"
+            >
+              Реф программа
+            </p>
+          </a>
+
+          <a
+            href="#"
+            class="flex items-center gap-2.5 px-5 py-3 group hover:bg-brand-gray-8 rounded-10 mt-2.5"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              class="stroke-brand-gray-3 group-hover:stroke-brand-primary-normal"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.0326 6.59615L15.1573 3.56462C15.6663 3.07081 16.3987 2.88345 17.0822 3.07216C17.7658 3.26088 18.2983 3.79746 18.4818 4.48245L20.9297 13.618C21.1133 14.3029 20.9204 15.0339 20.4227 15.5391C19.9251 16.0443 19.1971 16.2483 18.5094 16.0751L14.2876 15.012"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.59497 8.3207L12.0326 6.59573L14.2877 15.0115L7.84999 16.7365C5.98286 17.2368 4.06368 16.1288 3.56338 14.2616L3.12011 12.6073C2.87985 11.7107 3.00561 10.7554 3.46974 9.95145C3.93387 9.14755 4.69834 8.56095 5.59497 8.3207Z"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12.407 15.5156L13.1775 18.3913C13.3148 18.9037 13.2429 19.4496 12.9777 19.9089C12.7124 20.3683 12.2756 20.7035 11.7632 20.8408L11.431 20.9298C10.9186 21.0671 10.3727 20.9952 9.91332 20.73C9.45394 20.4648 9.11874 20.028 8.98145 19.5156L8.21094 16.64"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <p
+              class="font-medium text-sm text-brand-black group-hover:text-brand-primary-normal"
+            >
+              Реф программа
+            </p>
+          </a>
+
+          <hr class="block mt-5 mb-5" />
+
+          <a
+            href="#"
+            class="flex items-center gap-2.5 px-5 py-3 group hover:bg-brand-gray-8 rounded-10"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              class="stroke-brand-gray-3 group-hover:stroke-brand-primary-normal"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17 16L21 12M21 12L17 8M21 12L7 12M13 16V17C13 18.6569 11.6569 20 10 20H6C4.34315 20 3 18.6569 3 17V7C3 5.34315 4.34315 4 6 4H10C11.6569 4 13 5.34315 13 7V8"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <p
+              class="font-medium text-sm text-brand-black group-hover:text-brand-primary-normal"
+            >
+              Выйти
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Main -->
+      <div class="w-full md:w-[calc(100%-280px)] md:ml-280">
+        <!-- Main Header -->
+        <header class="z-40 sticky top-0 bg-white nav-shadow py-3.5">
+          <div
+            class="max-w-dashbort flex justify-between md:justify-end items-center px-4"
+          >
+            <!-- Burger & Logo -->
+            <div class="flex md:hidden items-center gap-5">
+              <button>
+                <img
+                  src="./assets/images/header/menu-burger.svg"
+                  alt="burger"
+                />
+              </button>
+
+              <a href="#">
+                <img
+                  class="w-14 h-11"
+                  src="./assets/images/header/logo.svg"
+                  alt="logo"
+                />
+              </a>
+            </div>
+
+            <!-- Button & User Name -->
+            <div class="flex items-center">
+              <a href="#" class="btn-primary pr-3 pl-3 sm:pl-4 sm:pr-5">
+                <img src="./assets/images/header/plus.svg" alt="plus" />
+                <p class="hidden sm:block">Добавить объявление</p>
+              </a>
+
+              <a href="#" class="ml-10">
+                <img src="./assets/images/header/user.svg" alt="user" />
+              </a>
+
+              <a
+                href="#"
+                class="hidden sm:block ml-4 sm:ml-3 font-medium to-brand-gray-1"
+              >
+                <p>Алексей</p>
+              </a>
+
+              <a href="#" class="ml-2.5">
+                <img src="./assets/images/header/down.svg" alt="down" />
+              </a>
+            </div>
+          </div>
+        </header>
+
+        <!-- Main Hero -->
+        <div class="max-w-dashbort py-8 px-4 md:pl-10">
+          <div class="bg-white rounded-10 py-9 md:py-10">
+            <!-- User Profile -->
+            <div class="px-5 md:px-10">
+              <div class="flex flex-col sm:flex-row gap-5 gap-y-4">
+                <!-- User Photo -->
+                <a href="#" class="shrink-0">
+                  <img
+                    src="./assets/images/hero/user-profile.svg"
+                    alt="user banner"
+                    class="w-24 h-24 rounded-full object-cover"
+                  />
+                </a>
+
+                <!-- User Info -->
+                <div>
+                  <p class="text-2xl font-bold text-brand-black">Фото</p>
+                  <p class="text-sm md:text-base text-brand-gray-2 mt-2.5">
+                    Ваша фотография, на которой четко видно лицо.
+                  </p>
+                  <a href="#" class="btn-dashbort">Загрузить фото</a>
+                </div>
+              </div>
+            </div>
+
+            <hr class="block mt-30 sm:mt-10" />
+
+            <!-- Personal Information -->
+            <div class="px-5 md:px-10 mt-30 sm:mt-10">
+              <p class="text-brand-black font-bold text-lg md:text-2xl">
+                Личные данные
+              </p>
+
+              <form action="#" class="max-w-lg mt-5">
+                <div>
+                  <p class="text-brand-black text-sm">
+                    Имя и фамилия представителя*
+                  </p>
+                  <input
+                    class="w-full border rounded-lg outline-none border-brand-gray-6 text-brand-gray-4 py-3 px-5 input-focus input-eror input-hover mt-1"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="ФИО"
+                  />
+                </div>
+
+                <div class="mt-4">
+                  <p class="text-brand-black text-sm">E-mail представителя*</p>
+                  <input
+                    class="w-full border rounded-lg outline-none border-brand-gray-6 text-brand-gray-4 py-3 px-5 input-focus input-eror input-hover mt-1"
+                    type="email"
+                    name="name"
+                    id="name"
+                    placeholder="E-mail"
+                  />
+                </div>
+
+                <div class="mt-4">
+                  <p class="text-brand-black text-sm">Телефон*</p>
+                  <input
+                    class="w-full border rounded-lg outline-none border-brand-gray-6 text-brand-gray-4 py-3 px-5 input-focus input-eror input-hover mt-1"
+                    type="tel"
+                    name="name"
+                    id="name"
+                    placeholder="+7 (___) ___-__-__"
+                  />
+                </div>
+              </form>
+            </div>
+
+            <hr class="block mt-30 sm:mt-10" />
+
+            <!-- Password -->
+            <div class="px-5 md:px-10 mt-30 sm:mt-10">
+              <p class="text-brand-black font-bold text-lg md:text-2xl">
+                Пароль
+              </p>
+
+              <form action="#" class="max-w-lg mt-5">
+                <div>
+                  <p class="text-brand-black text-sm">
+                    Имя и фамилия представителя*
+                  </p>
+                  <input
+                    class="w-full border rounded-lg outline-none border-brand-gray-6 text-brand-gray-4 outline-none py-3 px-5 input-focus input-eror input-hover mt-1"
+                    type="password"
+                    name="name"
+                    id="name"
+                    placeholder="*********"
+                  />
+                </div>
+
+                <div class="mt-4">
+                  <p class="text-brand-black text-sm">Новый пароль*</p>
+                  <input
+                    class="w-full border rounded-lg outline-none border-brand-gray-6 text-brand-gray-4 py-3 px-5 input-focus input-eror input-hover mt-1"
+                    type="password"
+                    name="name"
+                    id="name"
+                    placeholder="*********"
+                  />
+                </div>
+
+                <div class="mt-4">
+                  <p class="text-brand-black text-sm">Подтвердите пароль*</p>
+                  <input
+                    class="w-full outline-none border rounded-lg border-brand-gray-6 text-brand-gray-4 py-3 px-5 input-focus input-eror input-hover mt-1"
+                    type="password"
+                    name="name"
+                    id="name"
+                    placeholder="*********"
+                  />
+                </div>
+
+                <button type="submit" class="w-full flex btn-primary mt-4">
+                  Сохранить
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

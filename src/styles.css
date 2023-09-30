@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Onest";
+  src: url("../assets/fonts/Onest/../assets/fonts/Onest/Onest-Bold.eot");
+  src: url("../assets/fonts/Onest/Onest-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/Onest/Onest-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Onest/Onest-Bold.woff") format("woff"),
+    url("../assets/fonts/Onest/Onest-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("../assets/fonts/Onest/Onest-Medium.eot");
+  src: url("../assets/fonts/Onest/Onest-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/Onest/Onest-Medium.woff2") format("woff2"),
+    url("../assets/fonts/Onest/Onest-Medium.woff") format("woff"),
+    url("../assets/fonts/Onest/Onest-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("../assets/fonts/Onest/Onest-Regular.eot");
+  src: url("../assets/fonts/Onest/Onest-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/Onest/Onest-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Onest/Onest-Regular.woff") format("woff"),
+    url("../assets/fonts/Onest/Onest-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base Styles */
+@layer base {
+  body {
+    @apply font-onest text-brand-black;
+  }
+
+  h1 {
+    @apply font-bold text-xl md:text-28 lg:text-32;
+  }
+
+  h2 {
+    @apply font-bold text-2xl md:text-28 lg:text-32 text-center;
+  }
+
+  section {
+    @apply py-50 md:py-60;
+  }
+}
+
+/* Buttons Styles */
+.btn-primary {
+  @apply flex items-center justify-center gap-2.5 font-medium bg-brand-blue hover:bg-brand-primary-hover hover:rounded-xl transition-all duration-200 text-sm text-white rounded-lg py-3;
+}
+
+.btn-secondary {
+  @apply flex items-center justify-center text-brand-black bg-brand-gray-8 rounded-lg hover:rounded-full hover:bg-brand-gray-7 hover:transition-all hover:duration-300;
+}
+
+.btn-orange {
+  @apply flex items-center justify-center gap-2.5 bg-brand-orange font-medium hover:bg-brand-orange/90 transition-all duration-200 text-sm text-white rounded-lg py-3;
+}
+
+.btn-dashbort {
+  @apply inline-flex rounded-lg border border-brand-primary-normal hover:bg-brand-primary-normal text-brand-primary-normal hover:text-white hover:rounded-10  font-medium px-5 py-3 mt-2.5;
+}
+
+/* Input Styles */
+
+/* Input Hover */
+.input-hover {
+  @apply hover:border-brand-gray-6 hover:text-brand-gray-3 hover:shadow hover:transition-all hover:duration-300;
+}
+
+/* Input Focus */
+.input-focus {
+  @apply focus:font-medium focus:placeholder:font-normal focus:border-[0.0938rem] focus:border-brand-primary-normal focus:transition-all focus:duration-300;
+}
+
+/* Input Error */
+.input-error {
+  @apply border-[0.0938rem] border-brand-red rounded-full font-medium text-brand-black;
+}
+
+/* Navbar Shadow */
+.nav-shadow {
+  box-shadow: 0px 10px 40px 0px rgba(24, 26, 32, 0.12);
+}
+
+.links-dropdown-shadow {
+  box-shadow: 0px 15px 40px 0px rgba(44, 57, 78, 0.2);
+}
+
+.mobile-menu-shadow {
+  box-shadow: 0px 20px 40px 0px rgba(44, 57, 78, 0.2);
+}
+
+.mobile-bottom-menu-shadow {
+  box-shadow: 0px 10px 30px 0px rgba(57, 64, 83, 0.1),
+    0px 0px 20px 0px rgba(24, 26, 32, 0.1);
+}
+
+.dropdown-list-shadow {
+  box-shadow: 0px 10px 30px 0px rgba(57, 64, 83, 0.1);
+}
+
+.cost-dropdown-shadow {
+  box-shadow: 0px 0px 40px 0px rgba(24, 26, 32, 0.08);
+}
+
+.btn-shadow {
+  box-shadow: 0px 0px 15px 0px rgba(44, 57, 78, 0.2);
+}
+
+.items-linear {
+  background: linear-gradient(
+    270deg,
+    #fff 0%,
+    rgba(255, 255, 255, 0.93) 22.4%,
+    rgba(255, 255, 255, 0) 100%
+  ) !important;
+}
+
+/* width */
+.items::-webkit-scrollbar {
+  height: 0;
+}
+
+.design-linear-bg {
+  background: linear-gradient(180deg, rgba(24, 26, 32, 0) 0%, #181a20 100%);
+}
+
+/* Filter Poppup Styles */
+
+.input-filter {
+  @apply py-2 px-5 rounded-lg outline-none border border-brand-gray-6 text-brand-black;
+}
