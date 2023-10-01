@@ -643,9 +643,6 @@ video {
 .w-full {
   width: 100%;
 }
-.max-w-dashbort {
-  max-width: 68.75rem;
-}
 .max-w-lg {
   max-width: 32rem;
 }
@@ -1116,10 +1113,6 @@ video {
     display: none;
   }
 
-  .md\:w-\[calc\(100\%-280px\)\] {
-    width: calc(100% - 280px);
-  }
-
   .md\:justify-end {
     justify-content: flex-end;
   }
@@ -1134,10 +1127,6 @@ video {
     padding-bottom: 2.5rem;
   }
 
-  .md\:pl-10 {
-    padding-left: 2.5rem;
-  }
-
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1146,5 +1135,16 @@ video {
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .xl\:pl-10 {
+    padding-left: 2.5rem;
+  }
+
+  .xl\:pr-20 {
+    padding-right: 5rem;
   }
 }
